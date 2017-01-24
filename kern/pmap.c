@@ -1,4 +1,4 @@
-/* See COPYRIGHT for copyright information. */
+//copyright@Yiru Chen
 
 #include <inc/types.h>
 #include <inc/arm.h>

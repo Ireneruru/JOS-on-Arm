@@ -1,5 +1,4 @@
-/* See COPYRIGHT for copyright information. */
-
+//copyright@Yiru Chen
 #ifndef JOS_INC_ERROR_H
 #define JOS_INC_ERROR_H
 

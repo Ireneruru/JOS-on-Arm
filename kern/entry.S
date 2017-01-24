@@ -1,3 +1,4 @@
+//copyright@Yiru Chen	
 #include <inc/memlayout.h>
 
 // Ref. http://wiki.osdev.org/ARM_RaspberryPi_Tutorial_C

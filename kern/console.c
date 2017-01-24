@@ -1,4 +1,4 @@
-/* See COPYRIGHT for copyright information. */
+//copyright@Yiru Chen
 
 #include <inc/memlayout.h>
 #include <inc/string.h>

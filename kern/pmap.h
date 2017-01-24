@@ -1,4 +1,4 @@
-/* See COPYRIGHT for copyright information. */
+//copyright@Yiru Chen
 
 #ifndef JOS_KERN_PMAP_H
 #define JOS_KERN_PMAP_H
