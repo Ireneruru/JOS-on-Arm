@@ -1,2 +1,5 @@
-# JOS-on-Arm
-This a OS course project. It transplants the JOS on X86 to Arm. I completes the Lab1&amp;Lab2 transplant!
+# README #
+
+This a course project. The project transplant the JOS on X86 to Arm. 
+
+I have completed the Lab1&Lab2 transplant!

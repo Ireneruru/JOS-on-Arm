@@ -1,0 +1,54 @@
+#
+# Makefile fragment for JOS kernel.
+# This is NOT a complete makefile;
+# you must run GNU make in the top-level directory
+# where the GNUmakefile is located.
+#
+
+OBJDIRS += kern
+
+KERN_LDFLAGS := $(LDFLAGS) -T kern/kernel.ld -ffreestanding -nostdlib
+
+KERN_SRCFILES :=	kern/entry.S \
+			kern/entrypgdir.c \
+			kern/init.c \
+			kern/console.c \
+			kern/monitor.c \
+			kern/printf.c \
+			kern/pmap.c \
+			kern/kdebug.c \
+			lib/printfmt.c \
+			lib/readline.c \
+			lib/string.c
+
+# Only build files if they exist.
+KERN_SRCFILES := $(wildcard $(KERN_SRCFILES))
+
+KERN_OBJFILES := $(patsubst %.c, $(OBJDIR)/%.o, $(KERN_SRCFILES))
+KERN_OBJFILES := $(patsubst %.S, $(OBJDIR)/%.o, $(KERN_OBJFILES))
+KERN_OBJFILES := $(patsubst $(OBJDIR)/lib/%, $(OBJDIR)/kern/%, $(KERN_OBJFILES))
+
+# How to build kernel object files
+$(OBJDIR)/kern/%.o: kern/%.c
+	@echo + cc $<
+	@mkdir -p $(@D)
+	$(V)$(CC) -nostdinc $(KERN_CFLAGS) -c -o $@ $<
+
+$(OBJDIR)/kern/%.o: kern/%.S
+	@echo + as $<
+	@mkdir -p $(@D)
+	$(V)$(CC) -nostdinc $(KERN_CFLAGS) -c -o $@ $<
+
+$(OBJDIR)/kern/%.o: lib/%.c
+	@echo + cc $<
+	@mkdir -p $(@D)
+	$(V)$(CC) -nostdinc $(KERN_CFLAGS) -c -o $@ $<
+
+# How to build the kernel itself
+$(OBJDIR)/kern/kernel: $(KERN_OBJFILES) kern/kernel.ld
+	@echo + ld $@
+	$(V)$(CC) -o $@ $(KERN_LDFLAGS) $(KERN_OBJFILES) -lgcc
+	$(V)$(OBJDUMP) -S $@ > $@.asm
+	$(V)$(NM) -n $@ > $@.sym
+
+all: $(OBJDIR)/kern/kernel

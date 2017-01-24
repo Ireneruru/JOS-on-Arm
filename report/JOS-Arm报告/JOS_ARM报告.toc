@@ -1,0 +1,19 @@
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}
+\contentsline {subsection}{\numberline {1.1}ARM Introduction}{2}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Experiment Environment}{2}{subsection.1.2}
+\contentsline {section}{\numberline {2}Lab1 \& Lab2 Transplant}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}JOS on x86 Review}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}entry.S}{3}{subsection.2.2}
+\contentsline {paragraph}{Initialize BSS}{4}{section*.2}
+\contentsline {paragraph}{Turn on the MMU}{4}{section*.3}
+\contentsline {paragraph}{Enter the C code}{5}{section*.4}
+\contentsline {subsection}{\numberline {2.3}init.c}{6}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}console.c}{6}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}monitor.c}{7}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}entrypgdir.c}{8}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.7}pmap.c}{9}{subsection.2.7}
+\contentsline {paragraph}{物理页的管理}{10}{section*.5}
+\contentsline {paragraph}{页表映射管理}{10}{section*.6}
+\contentsline {paragraph}{\GenericError {(inputenc) }{Package inputenc Error: Unicode char 内 (U+5185)\MessageBreak not set up for use with LaTeX}{See the inputenc package documentation for explanation.}{Your command was ignored.\MessageBreak Type I <command> <return> to replace it with another command,\MessageBreak or <return> to continue without it.}\GenericError {(inputenc) }{Package inputenc Error: Unicode char 核 (U+6838)\MessageBreak not set up for use with LaTeX}{See the inputenc package documentation for explanation.}{Your command was ignored.\MessageBreak Type I <command> <return> to replace it with another command,\MessageBreak or <return> to continue without it.}\GenericError {(inputenc) }{Package inputenc Error: Unicode char 页 (U+9875)\MessageBreak not set up for use with LaTeX}{See the inputenc package documentation for explanation.}{Your command was ignored.\MessageBreak Type I <command> <return> to replace it with another command,\MessageBreak or <return> to continue without it.}\GenericError {(inputenc) }{Package inputenc Error: Unicode char 表 (U+8868)\MessageBreak not set up for use with LaTeX}{See the inputenc package documentation for explanation.}{Your command was ignored.\MessageBreak Type I <command> <return> to replace it with another command,\MessageBreak or <return> to continue without it.}\GenericError {(inputenc) }{Package inputenc Error: Unicode char 初 (U+521D)\MessageBreak not set up for use with LaTeX}{See the inputenc package documentation for explanation.}{Your command was ignored.\MessageBreak Type I <command> <return> to replace it with another command,\MessageBreak or <return> to continue without it.}\GenericError {(inputenc) }{Package inputenc Error: Unicode char 始 (U+59CB)\MessageBreak not set up for use with LaTeX}{See the inputenc package documentation for explanation.}{Your command was ignored.\MessageBreak Type I <command> <return> to replace it with another command,\MessageBreak or <return> to continue without it.}\GenericError {(inputenc) }{Package inputenc Error: Unicode char 化 (U+5316)\MessageBreak not set up for use with LaTeX}{See the inputenc package documentation for explanation.}{Your command was ignored.\MessageBreak Type I <command> <return> to replace it with another command,\MessageBreak or <return> to continue without it.}}{11}{section*.7}
+\contentsline {subsection}{\numberline {2.8}Unchanged Code for Jos on Arm }{12}{subsection.2.8}
+\contentsline {section}{\numberline {3}Conclusion}{13}{section.3}
